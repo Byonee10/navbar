@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.title h1 {
+    margin: 0;
+}
+
+.iconAndDropdown {
+    position: relative;
+}
+
+.navbaricon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dropDown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    width: 150px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.dropDown ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropDown ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropDown ul li:hover {
+    background-color: #555;
+}
